@@ -10,3 +10,9 @@ C:\Users\sensh\Downloads\ContactsWinFormSolution (4)\ContactsDataAccessLayer\obj
 C:\Users\sensh\Downloads\ContactsWinFormSolution (4)\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\sensh\Downloads\ContactsWinFormSolution (4)\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.dll
 C:\Users\sensh\Downloads\ContactsWinFormSolution (4)\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.pdb
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsDataAccessLayer\bin\Debug\ContactsDataAccessLayer.dll
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsDataAccessLayer\bin\Debug\ContactsDataAccessLayer.pdb
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.dll
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsDataAccessLayer\obj\Debug\ContactsDataAccessLayer.pdb

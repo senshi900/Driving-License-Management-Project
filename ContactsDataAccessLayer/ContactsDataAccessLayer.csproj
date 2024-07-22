@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsDataAccessSettings.cs" />
+    <Compile Include="clsUserData.cs" />
     <Compile Include="Person_contact.cs" />
     <Compile Include="CountryData.cs" />
     <Compile Include="ContactData.cs" />
