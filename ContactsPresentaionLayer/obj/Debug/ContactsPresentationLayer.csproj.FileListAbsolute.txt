@@ -105,3 +105,9 @@ C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Mana
 C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\bin\Debug\Contacts.exe.config
 C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\bin\Debug\Contacts.pdb
 C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\ContactsPresentationLayer.csproj.CopyComplete
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\Contacts.frmAcountInfo.resources
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\Contacts.user.frmChangePass.resources
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\Contacts.Applecations.frmMangeApplecationTypes.resources
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\Contacts.Applecations.frmUpdateApplication.resources
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\Contacts.Applecations.frmManageTestTypes.resources
+C:\Users\sensh\Downloads\Desktop DotNet car license project\Driving-License-Management-Project\ContactsPresentaionLayer\obj\Debug\Contacts.Applecations.frmApplicationTestUpdate.resources

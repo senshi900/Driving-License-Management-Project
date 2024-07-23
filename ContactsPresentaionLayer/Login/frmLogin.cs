@@ -24,14 +24,20 @@ namespace Contacts.Login
 
           if(user!=null)  {
                 MessageBox.Show("welcome");
-                label3.Text = user.PersonInfo.FirstName;
-                label4.Text=user.UserID.ToString();
-
+          
+                frmhome frmhome = new frmhome();
+                this.Hide();
+                frmhome.ShowDialog();
             }
             else
             {
                 MessageBox.Show("not authrized");
             }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

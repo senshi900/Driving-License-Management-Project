@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsApplications.cs" />
+    <Compile Include="clsTestTypes.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="info.cs" />
     <Compile Include="person_country.cs" />

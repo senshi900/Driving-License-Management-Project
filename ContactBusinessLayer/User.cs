@@ -47,6 +47,27 @@ namespace ContactBusinessLayer
         {
            return clsUserData.IsUSerExisist(personId);
         }
+        public static clsUser GetUserByID(int personID)
+        {
+            int UserID = -1;
+            string username = "";
+            string password = "";
+            bool isActive = false;
+            if (clsUserData.GetUserInfoByID(personID, ref UserID, ref username, ref password, ref isActive))
+            {
+                return new clsUser(UserID, username,personID, password, isActive);
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+        public bool ChangePassword(int userid,string password)
+        {
+            return clsUserData.ChangePassword(userid,password);
+        }
         public static clsUser CheckLogin(string username,string password )
         {
             int UserID=-1;

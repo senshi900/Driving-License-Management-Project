@@ -1,4 +1,6 @@
-﻿using Contacts.user;
+﻿using ContactBusinessLayer;
+using Contacts.Applecations;
+using Contacts.user;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +35,45 @@ namespace Contacts
         {
             FrmUsers frm = new FrmUsers();
             frm.ShowDialog();
+        }
+
+        private void accountSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePass frm = new frmChangePass(Global.currentUser.PersonInfo.PersonID);
+                frm.Show();
+        }
+
+        private void iNFORMATIONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAcountInfo frm = new frmAcountInfo(Global.currentUser.PersonInfo.PersonID);
+            frm.ShowDialog();
+        }
+
+        private void moreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void manageApplicationsTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMangeApplecationTypes frm = new frmMangeApplecationTypes();
+            frm.ShowDialog();
+        }
+
+        private void manageTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManageTestTypes frm = new frmManageTestTypes();
+            frm.ShowDialog();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
