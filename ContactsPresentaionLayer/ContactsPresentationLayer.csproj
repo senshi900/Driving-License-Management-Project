@@ -77,16 +77,16 @@
     <Compile Include="Applecations\frmUpdateApplication.Designer.cs">
       <DependentUpon>frmUpdateApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="control_pepole.cs">
+    <Compile Include="controllers\control_pepole.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="control_pepole.Designer.cs">
+    <Compile Include="controllers\control_pepole.Designer.cs">
       <DependentUpon>control_pepole.cs</DependentUpon>
     </Compile>
-    <Compile Include="ctrperson_with_filtter.cs">
+    <Compile Include="controllers\ctrperson_with_filtter.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ctrperson_with_filtter.Designer.cs">
+    <Compile Include="controllers\ctrperson_with_filtter.Designer.cs">
       <DependentUpon>ctrperson_with_filtter.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAcountInfo.cs">
@@ -106,6 +106,18 @@
     </Compile>
     <Compile Include="frm_person_info.Designer.cs">
       <DependentUpon>frm_person_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="license\frmManageLocalDrivingLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="license\frmManageLocalDrivingLicense.Designer.cs">
+      <DependentUpon>frmManageLocalDrivingLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="license\frmNewLocalLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="license\frmNewLocalLicense.Designer.cs">
+      <DependentUpon>frmNewLocalLicense.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
@@ -163,16 +175,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="simplecalc.cs">
+    <Compile Include="controllers\user.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="simplecalc.Designer.cs">
-      <DependentUpon>simplecalc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="user.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="user.Designer.cs">
+    <Compile Include="controllers\user.Designer.cs">
       <DependentUpon>user.cs</DependentUpon>
     </Compile>
     <Compile Include="user\frmAddUpdateUser.cs">
@@ -208,10 +214,10 @@
     <EmbeddedResource Include="Applecations\frmUpdateApplication.resx">
       <DependentUpon>frmUpdateApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="control_pepole.resx">
+    <EmbeddedResource Include="controllers\control_pepole.resx">
       <DependentUpon>control_pepole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ctrperson_with_filtter.resx">
+    <EmbeddedResource Include="controllers\ctrperson_with_filtter.resx">
       <DependentUpon>ctrperson_with_filtter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAcountInfo.resx">
@@ -222,6 +228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_person_info.resx">
       <DependentUpon>frm_person_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="license\frmManageLocalDrivingLicense.resx">
+      <DependentUpon>frmManageLocalDrivingLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="license\frmNewLocalLicense.resx">
+      <DependentUpon>frmNewLocalLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -254,10 +266,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="simplecalc.resx">
-      <DependentUpon>simplecalc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="user.resx">
+    <EmbeddedResource Include="controllers\user.resx">
       <DependentUpon>user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user\frmAddUpdateUser.resx">

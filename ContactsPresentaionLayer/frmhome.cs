@@ -1,5 +1,6 @@
 ﻿using ContactBusinessLayer;
 using Contacts.Applecations;
+using Contacts.license;
 using Contacts.user;
 using System;
 using System.Collections.Generic;
@@ -72,6 +73,17 @@ namespace Contacts
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void localLicenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewLocalLicense frm = new frmNewLocalLicense();
+            frm.ShowDialog();
+        }
+
+        private void localDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

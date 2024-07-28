@@ -21,6 +21,7 @@ namespace Contacts.Login
         private void button1_Click(object sender, EventArgs e)
         {
             clsUser user = clsUser.CheckLogin(textBox1.Text, textBox2.Text);
+            Global.currentUser = user;
 
           if(user!=null)  {
                 MessageBox.Show("welcome");
@@ -28,13 +29,15 @@ namespace Contacts.Login
                 frmhome frmhome = new frmhome();
                 this.Hide();
                 frmhome.ShowDialog();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("not authrized");
+
             }
         }
-
+        
         private void frmLogin_Load(object sender, EventArgs e)
         {
 

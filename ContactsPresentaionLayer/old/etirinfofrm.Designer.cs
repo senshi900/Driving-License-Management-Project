@@ -35,8 +35,7 @@
             this.tbname = new System.Windows.Forms.TextBox();
             this.tbphone = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
-            this.simplecalc2 = new Contacts.simplecalc();
-            this.simplecalc1 = new Contacts.simplecalc();
+
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -103,17 +102,11 @@
             // 
             // simplecalc2
             // 
-            this.simplecalc2.Location = new System.Drawing.Point(12, 312);
-            this.simplecalc2.Name = "simplecalc2";
-            this.simplecalc2.Size = new System.Drawing.Size(223, 180);
-            this.simplecalc2.TabIndex = 8;
+
             // 
             // simplecalc1
             // 
-            this.simplecalc1.Location = new System.Drawing.Point(283, 57);
-            this.simplecalc1.Name = "simplecalc1";
-            this.simplecalc1.Size = new System.Drawing.Size(223, 180);
-            this.simplecalc1.TabIndex = 7;
+
             // 
             // button1
             // 
@@ -131,8 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 504);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.simplecalc2);
-            this.Controls.Add(this.simplecalc1);
+
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.tbphone);
             this.Controls.Add(this.tbname);
@@ -157,8 +149,7 @@
         private System.Windows.Forms.TextBox tbname;
         private System.Windows.Forms.TextBox tbphone;
         private System.Windows.Forms.Button btnsave;
-        private simplecalc simplecalc1;
-        private simplecalc simplecalc2;
+
         private System.Windows.Forms.Button button1;
     }
 }

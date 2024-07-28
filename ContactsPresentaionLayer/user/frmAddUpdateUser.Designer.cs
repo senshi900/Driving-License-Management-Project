@@ -31,7 +31,9 @@
             this.tcUserInfo = new System.Windows.Forms.TabControl();
             this.tbPersonInfo = new System.Windows.Forms.TabPage();
             this.btnNext = new System.Windows.Forms.Button();
+            this.ctrperson_with_filtter1 = new Contacts.ctrperson_with_filtter();
             this.tbLoginInfo = new System.Windows.Forms.TabPage();
+            this.chbActive = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tbpassword = new System.Windows.Forms.TextBox();
             this.tbconfirmpassword = new System.Windows.Forms.TextBox();
@@ -41,9 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbid = new System.Windows.Forms.Label();
-            this.chbActive = new System.Windows.Forms.CheckBox();
-            this.ctrperson_with_filtter1 = new Contacts.ctrperson_with_filtter();
-            this.label4 = new System.Windows.Forms.Label();
             this.tcUserInfo.SuspendLayout();
             this.tbPersonInfo.SuspendLayout();
             this.tbLoginInfo.SuspendLayout();
@@ -61,7 +60,6 @@
             // 
             // tbPersonInfo
             // 
-            this.tbPersonInfo.Controls.Add(this.label4);
             this.tbPersonInfo.Controls.Add(this.btnNext);
             this.tbPersonInfo.Controls.Add(this.ctrperson_with_filtter1);
             this.tbPersonInfo.Location = new System.Drawing.Point(4, 25);
@@ -81,6 +79,13 @@
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // ctrperson_with_filtter1
+            // 
+            this.ctrperson_with_filtter1.Location = new System.Drawing.Point(6, 6);
+            this.ctrperson_with_filtter1.Name = "ctrperson_with_filtter1";
+            this.ctrperson_with_filtter1.Size = new System.Drawing.Size(970, 392);
+            this.ctrperson_with_filtter1.TabIndex = 0;
             // 
             // tbLoginInfo
             // 
@@ -102,6 +107,17 @@
             this.tbLoginInfo.Text = "LoginInfo";
             this.tbLoginInfo.UseVisualStyleBackColor = true;
             this.tbLoginInfo.Click += new System.EventHandler(this.tbLoginInfo_Click);
+            // 
+            // chbActive
+            // 
+            this.chbActive.AutoSize = true;
+            this.chbActive.Location = new System.Drawing.Point(191, 245);
+            this.chbActive.Name = "chbActive";
+            this.chbActive.Size = new System.Drawing.Size(81, 20);
+            this.chbActive.TabIndex = 9;
+            this.chbActive.Text = "IS Active";
+            this.chbActive.UseVisualStyleBackColor = true;
+            this.chbActive.CheckedChanged += new System.EventHandler(this.chbActive_CheckedChanged);
             // 
             // button1
             // 
@@ -179,33 +195,6 @@
             this.lbid.TabIndex = 0;
             this.lbid.Text = "UserId";
             // 
-            // chbActive
-            // 
-            this.chbActive.AutoSize = true;
-            this.chbActive.Location = new System.Drawing.Point(191, 245);
-            this.chbActive.Name = "chbActive";
-            this.chbActive.Size = new System.Drawing.Size(81, 20);
-            this.chbActive.TabIndex = 9;
-            this.chbActive.Text = "IS Active";
-            this.chbActive.UseVisualStyleBackColor = true;
-            this.chbActive.CheckedChanged += new System.EventHandler(this.chbActive_CheckedChanged);
-            // 
-            // ctrperson_with_filtter1
-            // 
-            this.ctrperson_with_filtter1.Location = new System.Drawing.Point(6, 6);
-            this.ctrperson_with_filtter1.Name = "ctrperson_with_filtter1";
-            this.ctrperson_with_filtter1.Size = new System.Drawing.Size(970, 392);
-            this.ctrperson_with_filtter1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1012, 210);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "label4";
-            // 
             // frmAddUpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,7 +205,6 @@
             this.Text = "frmAddUpdateUser";
             this.tcUserInfo.ResumeLayout(false);
             this.tbPersonInfo.ResumeLayout(false);
-            this.tbPersonInfo.PerformLayout();
             this.tbLoginInfo.ResumeLayout(false);
             this.tbLoginInfo.PerformLayout();
             this.ResumeLayout(false);
@@ -240,6 +228,5 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox chbActive;
-        private System.Windows.Forms.Label label4;
     }
 }
