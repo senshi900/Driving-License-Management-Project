@@ -85,6 +85,17 @@ namespace Contacts
 
         private void localDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmManageLocalDrivingLicense frm = new frmManageLocalDrivingLicense();
+            frm.ShowDialog();
+        }
+
+        private void localToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void manageApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }

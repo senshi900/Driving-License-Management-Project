@@ -35,15 +35,25 @@ namespace Contacts
         {
 
         }
+        public void SetFilter(bool value)
+        {
+            gbFilter.Enabled = value;
+
+        }
         public int PersonID
         {
             get { return ctrlUser1.PersonID; }
+        }
+        public void SetUser(int id)
+        {
+           
+            ctrlUser1.SetUserID(id);
         }
 
         private void btnfind_Click(object sender, EventArgs e)
         {
             ctrlUser1.SetUserID(int.Parse(textBox1.Text));
-            person= clsPerson.GetPersonByID(int.Parse(textBox1.Text));
+            person = clsPerson.GetPersonByID(int.Parse(textBox1.Text));
         }
 
         private void ctrlUser1_Load(object sender, EventArgs e)

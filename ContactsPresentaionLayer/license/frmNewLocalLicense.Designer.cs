@@ -31,8 +31,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbinfo = new System.Windows.Forms.TabPage();
             this.btnNext = new System.Windows.Forms.Button();
+            this.ctrperson_with_filtter1 = new Contacts.ctrperson_with_filtter();
             this.tbApplication = new System.Windows.Forms.TabPage();
-            this.lbcurrentuser = new System.Windows.Forms.Label();
+            this.btnsSave = new System.Windows.Forms.Button();
             this.lbfees = new System.Windows.Forms.Label();
             this.lbcreatedby = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -45,8 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.ctrperson_with_filtter1 = new Contacts.ctrperson_with_filtter();
-            this.btnsSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tbinfo.SuspendLayout();
             this.tbApplication.SuspendLayout();
@@ -85,10 +84,16 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // ctrperson_with_filtter1
+            // 
+            this.ctrperson_with_filtter1.Location = new System.Drawing.Point(50, 51);
+            this.ctrperson_with_filtter1.Name = "ctrperson_with_filtter1";
+            this.ctrperson_with_filtter1.Size = new System.Drawing.Size(870, 392);
+            this.ctrperson_with_filtter1.TabIndex = 0;
+            // 
             // tbApplication
             // 
             this.tbApplication.Controls.Add(this.btnsSave);
-            this.tbApplication.Controls.Add(this.lbcurrentuser);
             this.tbApplication.Controls.Add(this.lbfees);
             this.tbApplication.Controls.Add(this.lbcreatedby);
             this.tbApplication.Controls.Add(this.comboBox1);
@@ -108,14 +113,15 @@
             this.tbApplication.UseVisualStyleBackColor = true;
             this.tbApplication.Click += new System.EventHandler(this.tbApplication_Click);
             // 
-            // lbcurrentuser
+            // btnsSave
             // 
-            this.lbcurrentuser.AutoSize = true;
-            this.lbcurrentuser.Location = new System.Drawing.Point(114, 333);
-            this.lbcurrentuser.Name = "lbcurrentuser";
-            this.lbcurrentuser.Size = new System.Drawing.Size(96, 16);
-            this.lbcurrentuser.TabIndex = 11;
-            this.lbcurrentuser.Text = "Application ID: ";
+            this.btnsSave.Location = new System.Drawing.Point(875, 413);
+            this.btnsSave.Name = "btnsSave";
+            this.btnsSave.Size = new System.Drawing.Size(98, 51);
+            this.btnsSave.TabIndex = 12;
+            this.btnsSave.Text = "Save";
+            this.btnsSave.UseVisualStyleBackColor = true;
+            this.btnsSave.Click += new System.EventHandler(this.btnsSave_Click);
             // 
             // lbfees
             // 
@@ -138,14 +144,6 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Class 1 -Small Motorcycle",
-            "Class 2 -Hevy Motorcycle Licence",
-            "Class 3 -Ordinary driving licencese",
-            "Class 4 -Commercial",
-            "Class 5 -Agriculrural",
-            "Class 6 -Small And medum bus",
-            "Class 7 - Truck and hevy vehicle"});
             this.comboBox1.Location = new System.Drawing.Point(233, 191);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
@@ -232,23 +230,6 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // ctrperson_with_filtter1
-            // 
-            this.ctrperson_with_filtter1.Location = new System.Drawing.Point(50, 51);
-            this.ctrperson_with_filtter1.Name = "ctrperson_with_filtter1";
-            this.ctrperson_with_filtter1.Size = new System.Drawing.Size(870, 392);
-            this.ctrperson_with_filtter1.TabIndex = 0;
-            // 
-            // btnsSave
-            // 
-            this.btnsSave.Location = new System.Drawing.Point(875, 413);
-            this.btnsSave.Name = "btnsSave";
-            this.btnsSave.Size = new System.Drawing.Size(98, 51);
-            this.btnsSave.TabIndex = 12;
-            this.btnsSave.Text = "Save";
-            this.btnsSave.UseVisualStyleBackColor = true;
-            this.btnsSave.Click += new System.EventHandler(this.btnsSave_Click);
-            // 
             // frmNewLocalLicense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -259,6 +240,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frmNewLocalLicense";
             this.Text = "frmNewLocalLicense";
+            this.Load += new System.EventHandler(this.frmNewLocalLicense_Load);
             this.tabControl1.ResumeLayout(false);
             this.tbinfo.ResumeLayout(false);
             this.tbApplication.ResumeLayout(false);
@@ -286,7 +268,6 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label lbcurrentuser;
         private System.Windows.Forms.Button btnsSave;
     }
 }

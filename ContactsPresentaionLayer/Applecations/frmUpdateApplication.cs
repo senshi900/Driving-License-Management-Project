@@ -13,7 +13,7 @@ namespace Contacts.Applecations
 {
     public partial class frmUpdateApplication : Form
     {
-        clsApplications applications;
+        clsApplicationTypres applications;
         int currentid;
         public frmUpdateApplication(int id)
         {
@@ -23,7 +23,7 @@ namespace Contacts.Applecations
 
         private void frmUpdateApplication_Load(object sender, EventArgs e)
         {
-            applications= clsApplications.GetApplicationByID(currentid);
+            applications= clsApplicationTypres.GetApplicationByID(currentid);
             textBox1.Text = applications.ApplicationsTypeTitle;
             textBox2.Text = applications.ApplicationsFees.ToString();
         }

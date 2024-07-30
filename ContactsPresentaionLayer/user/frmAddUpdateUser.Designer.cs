@@ -31,7 +31,6 @@
             this.tcUserInfo = new System.Windows.Forms.TabControl();
             this.tbPersonInfo = new System.Windows.Forms.TabPage();
             this.btnNext = new System.Windows.Forms.Button();
-            this.ctrperson_with_filtter1 = new Contacts.ctrperson_with_filtter();
             this.tbLoginInfo = new System.Windows.Forms.TabPage();
             this.chbActive = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,6 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbid = new System.Windows.Forms.Label();
+            this.ctrperson_with_filtter1 = new Contacts.ctrperson_with_filtter();
+            this.btnClose = new System.Windows.Forms.Button();
             this.tcUserInfo.SuspendLayout();
             this.tbPersonInfo.SuspendLayout();
             this.tbLoginInfo.SuspendLayout();
@@ -60,8 +61,8 @@
             // 
             // tbPersonInfo
             // 
-            this.tbPersonInfo.Controls.Add(this.btnNext);
             this.tbPersonInfo.Controls.Add(this.ctrperson_with_filtter1);
+            this.tbPersonInfo.Controls.Add(this.btnNext);
             this.tbPersonInfo.Location = new System.Drawing.Point(4, 25);
             this.tbPersonInfo.Name = "tbPersonInfo";
             this.tbPersonInfo.Padding = new System.Windows.Forms.Padding(3);
@@ -69,6 +70,7 @@
             this.tbPersonInfo.TabIndex = 0;
             this.tbPersonInfo.Text = "Person Info";
             this.tbPersonInfo.UseVisualStyleBackColor = true;
+            this.tbPersonInfo.Click += new System.EventHandler(this.tbPersonInfo_Click);
             // 
             // btnNext
             // 
@@ -79,13 +81,6 @@
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // ctrperson_with_filtter1
-            // 
-            this.ctrperson_with_filtter1.Location = new System.Drawing.Point(6, 6);
-            this.ctrperson_with_filtter1.Name = "ctrperson_with_filtter1";
-            this.ctrperson_with_filtter1.Size = new System.Drawing.Size(970, 392);
-            this.ctrperson_with_filtter1.TabIndex = 0;
             // 
             // tbLoginInfo
             // 
@@ -195,14 +190,34 @@
             this.lbid.TabIndex = 0;
             this.lbid.Text = "UserId";
             // 
+            // ctrperson_with_filtter1
+            // 
+            this.ctrperson_with_filtter1.Location = new System.Drawing.Point(26, 3);
+            this.ctrperson_with_filtter1.Name = "ctrperson_with_filtter1";
+            this.ctrperson_with_filtter1.Size = new System.Drawing.Size(870, 392);
+            this.ctrperson_with_filtter1.TabIndex = 2;
+            this.ctrperson_with_filtter1.Load += new System.EventHandler(this.ctrperson_with_filtter1_Load);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(1069, 460);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(91, 39);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmAddUpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1283, 504);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.tcUserInfo);
             this.Name = "frmAddUpdateUser";
             this.Text = "frmAddUpdateUser";
+            this.Load += new System.EventHandler(this.frmAddUpdateUser_Load);
             this.tcUserInfo.ResumeLayout(false);
             this.tbPersonInfo.ResumeLayout(false);
             this.tbLoginInfo.ResumeLayout(false);
@@ -224,9 +239,10 @@
         private System.Windows.Forms.TextBox tbconfirmpassword;
         private System.Windows.Forms.TextBox tbusername;
         private System.Windows.Forms.Label label1;
-        private ctrperson_with_filtter ctrperson_with_filtter1;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox chbActive;
+        private ctrperson_with_filtter ctrperson_with_filtter1;
+        private System.Windows.Forms.Button btnClose;
     }
 }

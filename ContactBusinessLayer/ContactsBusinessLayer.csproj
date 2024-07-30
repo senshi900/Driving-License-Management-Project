@@ -41,18 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsApplications.cs" />
-    <Compile Include="clsLicenseApplication.cs" />
-    <Compile Include="clsLocalDrivingApplication.cs" />
+    <Compile Include="clsApplicationTypres.cs" />
+    <Compile Include="clsLicenseClass.cs" />
+    <Compile Include="clsLocalDrivingLicenseApplication.cs" />
+    <Compile Include="clsApplication.cs" />
     <Compile Include="clsTestTypes.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Global.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="clsPerson.cs" />
     <Compile Include="info.cs" />
     <Compile Include="person_country.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="clsUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ContactsDataAccessLayer\ContactsDataAccessLayer.csproj">

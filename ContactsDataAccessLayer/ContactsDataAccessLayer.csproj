@@ -43,13 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsApplicationsData.cs" />
+    <Compile Include="clsApplicationTypesData.cs" />
     <Compile Include="clsDataAccessSettings.cs" />
     <Compile Include="clsLicenseApplicationData.cs" />
-    <Compile Include="clsLocalDrivingApplicationData.cs" />
+    <Compile Include="clsApplicationData.cs" />
+    <Compile Include="clsLicenseData.cs" />
+    <Compile Include="clsLocalDrivingLicenseApplicationData.cs" />
     <Compile Include="clsTestTypeData.cs" />
     <Compile Include="clsUserData.cs" />
-    <Compile Include="Person_contact.cs" />
+    <Compile Include="clsPersonData.cs" />
     <Compile Include="CountryData.cs" />
     <Compile Include="ContactData.cs" />
     <Compile Include="informationdata.cs" />

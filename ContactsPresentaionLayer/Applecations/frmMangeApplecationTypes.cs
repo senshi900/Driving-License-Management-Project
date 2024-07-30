@@ -20,7 +20,7 @@ namespace Contacts.Applecations
 
         private void frmMangeApplecationTypes_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource=clsApplications.GetAllApplications();
+            dataGridView1.DataSource=clsApplicationTypres.GetAllApplications();
             label3.Text=dataGridView1.RowCount.ToString();
         }
 
